@@ -9,7 +9,9 @@ import (
 	"gorm.io/gorm"
 )
 
-func Init() *gorm.DB {
+var db *gorm.DB
+
+func Init() {
 	dbUrl := os.Getenv("DB_URL")
 
 	db, err := gorm.Open(postgres.Open(dbUrl), &gorm.Config{})
@@ -19,6 +21,8 @@ func Init() *gorm.DB {
 	}
 
 	db.AutoMigrate(&user.User{})
+}
 
+func GetDB() *gorm.DB {
 	return db
 }
