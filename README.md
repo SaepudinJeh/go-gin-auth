@@ -1,16 +1,16 @@
 ## HOW TO RUNNING
 
-### Running DEV
+### DEV
 #### Install via nodemon
 ```
 npm i -g nodemon
 ```
-##### And
+##### Running DEV
 ```
 nodemon --exec go run main.go --signal SIGTERM
 ```
 
-## Running PROD
+## PROD
 ```
 go run main.go
 ```
