@@ -1,10 +1,15 @@
 ## HOW TO RUNNING
 
 ### Running DEV
-```bash
+#### Install via nodemon
+```
+npm i -g nodemon
+```
+```
 nodemon --exec go run main.go --signal SIGTERM
 ```
 
-```bash
+## Running PROD
+```
 go run main.go
 ```
