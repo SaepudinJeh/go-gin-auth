@@ -5,6 +5,7 @@
 ```
 npm i -g nodemon
 ```
+##### And
 ```
 nodemon --exec go run main.go --signal SIGTERM
 ```
