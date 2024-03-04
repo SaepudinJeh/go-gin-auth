@@ -1,4 +1,4 @@
-module go-auth
+module github.com/SaepudinJeh/go-gin-auth
 
 go 1.22.0
 
